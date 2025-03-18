@@ -1,0 +1,25 @@
+@url = https://fuzzy-space-succotash-4qjrr56xrxf7ppp-8080.app.github.dev
+
+GET {{url}}/generos
+
+###
+GET {{url}}/generos/3
+
+###
+POST {{url}}/generos
+Content-Type: application/json
+
+{
+    "descricao": "Fantasia"
+}
+
+###
+PUT {{url}}/generos/5
+Content-Type: application/json
+
+{
+    "descricao": "Ficção Científica"
+}
+
+###
+DELETE {{url}}/generos/5
