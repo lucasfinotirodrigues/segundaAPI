@@ -1,0 +1,29 @@
+@url = https://fuzzy-space-succotash-4qjrr56xrxf7ppp-8080.app.github.dev
+
+GET {{url}}/livros
+
+###
+GET {{url}}/livros/3
+
+###
+POST {{url}}/livros
+Content-Type: application/json
+
+{
+    "titulo": "Teste Teste Teste",
+    "generos" : "Romance",
+    "autores" : "Fulano de Tal"
+}
+
+###
+PUT {{url}}/livros/5
+Content-Type: application/json
+
+{
+    "titulo": "Livro 5 Alterado",
+    "generos" : "Genero Alterado",
+    "autores" : "Autor Alterado"
+}
+
+###
+DELETE {{url}}/livros/5
